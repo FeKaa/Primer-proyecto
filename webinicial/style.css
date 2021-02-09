@@ -1,0 +1,226 @@
+:root{
+    --main-color: #48C9B0;
+    --facebook: #3b5999;
+    --instagram: #f0444c;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    flex-direction: column;
+    background: #050801;
+    overflow: hidden;
+}
+/*-----------------------------------BOTON WELCOME-----------------------------------*/
+.boton1 {
+
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 0%;
+    color: var(--main-color);
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+    transform: translateY(150px);
+}
+
+.boton1:hover {
+    background: var(--main-color);
+    color: #050801;
+    
+
+    box-shadow: 0 0 5px var(--main-color),
+                0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 75px var(--main-color);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,var(--main-color));
+    animation: animate1 1s linear infinite;
+    
+}
+@keyframes animate1{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,var(--main-color));
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--main-color));
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,var(--main-color));
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+
+
+/*-----------------------------------REDES-----------------------------------*/
+.redes {
+    display: flex;
+    height: 50vh;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 60px;
+    height: 56px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    transform: translateY(300px);
+    text-decoration: none;
+
+}
+
+.redes ul li a {
+    display: block;
+    padding: 0 10px;
+    background: rgb(24, 24, 24);
+    color: var(--main-color);
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+    
+
+}
+
+/*.redes ul:hover a {
+   filter: blur(2px);
+}*/
+
+.redes ul li a:hover {
+    /*transform: translateY(-3px) scale(1.05);*/
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+}
+
+.redes ul li .facebook:hover {
+    background: var(--facebook);
+    color: #fff;
+    
+}
+
+.redes ul li .instagram:hover {
+    background: var(--instagram);
+    color: #fff;
+}
+
+.redes ul li .twitter:hover {
+    background: var(--twitter);
+    color: #fff;
+}
+
+.redes ul li .pinterest:hover {
+    background: var(--pinterest);
+    color: #fff;
+}
+/*-----------------------------------BARRA DE NAVEGACION ARRIBA-----------------------------------*/
+.nav {
+    margin: 0;
+    padding: 25px;
+    background: var(--main-color);
+    width: 100vw;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px; 
+    transform: translateY(-480px);
+}
+
+.login,
+.contact {
+    color: #050801;
+    text-decoration: none;
+}
+/*-----------------------------------BARRA NAVEGACION ABAJO-----------------------------------*/
+.copy {
+    margin: 0;
+    padding: 20px;
+    background: var(--main-color);
+    width: 1500px;
+    text-transform: uppercase;
+    transform: translateY(55px);
+}
+.copy a{
+    margin-left: 580px;
+    text-decoration: none;
+    color: #050801;
+    
+}
